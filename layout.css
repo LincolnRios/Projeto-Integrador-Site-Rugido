@@ -1,0 +1,92 @@
+/* Estilos Gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header, nav, main, aside, footer {
+    background:white;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #60076b; /* Roxo açaí */
+    color: white;
+}
+
+#logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: none; /* Escondido inicialmente no mobile */
+}
+
+nav a {
+    color: #050303; /* Laranja */
+    padding: 10px;
+    text-decoration: none;
+}
+
+footer {
+    background: #238b2d; /* Verde limão */
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Estilos Mobile */
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #openMenu {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu.active {
+        display: block;
+    }
+}
+
+/* Estilos Desktop */
+@media (min-width: 769px) {
+    nav {
+        display: flex;
+    }
+
+    nav a {
+        margin-left: 20px;
+    }
+
+    #openMenu {
+        display: none;
+    }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página da LandPage da Churrascaria Pé de Serra">
+    <meta name="keywords" content="Churrascaria, Churrasco, LandPage, Pé de Serra">
+    <title>Churrascaria Pé de Serra - LandPage</title>
+    <link rel="stylesheet" href="assets/css/landpage.css">
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(230, 240, 238);
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Cabeçalho */
+    .header {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-color: rgb(139, 69, 19);
+    }
+
+    .header img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+    .header .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+
+    .header .banner-text h1 {
+        font-size: 48px;
+        margin: 0;
+    }
+
+    .header .banner-text p {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .cta {
+        background-color: #FF5733;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta:hover {
+        background-color: #C70039;
+    }
+
+    /* Seção de Destaque */
+    .destaque {
+        padding: 50px;
+        background-color: rgb(255, 174, 0);
+        text-align: center;
+    }
+
+    .destaque h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .destaque p {
+        font-size: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Seção Sobre Nós */
+    .sobre {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .sobre h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .sobre p {
+        font-size: 18px;
+        max-width: 800px;
+        margin: 0 auto;
+        color: rgb(34, 34, 34);
+    }
+
+    /* Seção de Contato */
+    .contato {
+        background-color: rgb(34, 139, 34);
+        color: white;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .contato h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .contato form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .contato input, .contato textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .contato button {
+        background-color: #FF5733;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .contato button:hover {
+        background-color: #C70039;
+    }
+
+    /* Rodapé */
+    footer {
+        background-color: rgb(139, 69, 19);
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+</style>
+
+<body>
+    <!-- Cabeçalho com banner -->
+    <header class="header">
+        <!-- Imagem do Banner -->
+        <img src="assets/img/banner-landpage.png" alt="Banner da LandPage">
+    </header>
+
+    <!-- Seção de Destaque -->
+    <section class="destaque">
+        <h1>O melhor churrasco do Brasil na sua mesa!</h1>
+        <h2>Promoções Especiais</h2>
+        <p>Venha aproveitar nossas promoções e saborear o verdadeiro churrasco na brasa. Somente este mês, a picanha está com 30% de desconto!</p>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma família tradicional especializada na arte do churrasco há gerações. Nosso foco é sempre proporcionar a melhor experiência gastronômica, agradando a todos os tipos de paladares. Venha nos visitar e desfrute do que há de melhor na culinária brasileira!</p>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <form action="#">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Churrascaria Pé de Serra - Av: Francisco Glicério, 1485, Campinas-SP</p>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
